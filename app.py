@@ -22,6 +22,6 @@ if __name__ == "__main__":
         print("No matches found.")
     else:
         print("\n")
-        [print(match) for match in matches_combinations]
+        print(*(match for match in matches_combinations), sep = "\n")
 
 
